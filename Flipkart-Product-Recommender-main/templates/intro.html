@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html style=" height: 100%;">
+<head>
+<title>FLIPKART</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Poppins&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Poppins&display=swap" rel="stylesheet">
+    
+    <!-- css and js bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+</head>
+<body style=" height: 100%;">
+
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+<div id="bg" style="background:url(../static/bg1.jpg); height: 100%;
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;">
+<div class="col-xs-1" align="center" >
+<p style="font-size:50px;color:rgb(242, 255, 0);font-family:Courier New ;  padding-top: 30px;font-weight: 800;font-family: 'Outfit', sans-serif;" >FLIPKART</p>
+<div>
+<b style="font-size:40px; color:rgb(0, 0, 0);padding-top: 30px;font-family: 'Poppins', sans-serif;">Product Recommender</b>
+<p style="font-size:25px; color:rgb(255, 255, 255);padding-top: 30px;font-weight: 600;font-family: 'Poppins', sans-serif;">The Flipkart product recommender model collects user behavior data, preprocesses and engineers features, trains and evaluates the model using appropriate machine learning algorithms and metrics, and deploys the model to generate personalized product recommendations for users in a user-friendly interface.</p>
+<div style="font-size:25px;color:rgb(255, 255, 255);padding-top: 30px;font-weight: 900;font-family: 'Poppins', sans-serif;">
+
+  <b style="font-size:30px; color:rgb(0, 0, 0);padding-top: 30px; font-weight: 600;font-family: 'Poppins', sans-serif;">Enter Product Name to see similar Products:</b>
+<form action="{{url_for('model')}}" method="post">
+  <div class="input-group mb-3">
+    <input class="form-control w-25" id="Productname" type="text" class="form-control" name="Pname" placeholder="Product Name" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+      <button class="btn btn-info" type="submit">Search</button>
+    </div>
+  </div>
+</form>
+</div>
+</div></div>
+
+</body>
+</html>
